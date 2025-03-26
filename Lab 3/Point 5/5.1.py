@@ -20,6 +20,7 @@ while True:
         ret, frame = cap.read()  
         
         # resizing for faster detection
+        """ Changes made here """
         frame = cv2.resize(frame, (256, 256)) #Uncomment and see the speed up
         
         # Converting to gray scal as HOG feature extraction in scikit-image works only on gray scale image
