@@ -1,0 +1,9 @@
+Summary
+
+1. This system uses MQTT for communication between a webcam node and a laptop node. The webcam node listens for image capture requests and sends captured images as base64-encoded data. The laptop node requests image captures every 10 seconds and saves the received images to disk.
+
+2. The Webcam Node captures and transmits images upon request via MQTT.
+
+3. The Laptop Node listens for image data, decodes it, and saves it to a file. Additionally, it sends capture requests every 10 seconds to trigger image capture from the webcam node.
+
+This setup demonstrates a basic, MQTT-based system for capturing and transmitting images in a distributed system using Paho MQTT and OpenCV.
